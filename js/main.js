@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 var ww = $(window).width();
 var padSize=1023;
-var moSize=375;
+var moSize=768;
 
 
 if (ww >= padSize && swiper == undefined) {
@@ -33,9 +33,9 @@ if (ww >= padSize && swiper == undefined) {
     });
 
 } else if (ww < padSize && swiper != undefined) {
-swiper.destroy();
-swiper = undefined;
-swiper.mousewheel.disable();//swiper 함수 휠 이벤트 끄기
+    swiper.destroy();
+    swiper = undefined;
+    swiper.mousewheel.disable();//swiper 함수 휠 이벤트 끄기
 }
 
     
